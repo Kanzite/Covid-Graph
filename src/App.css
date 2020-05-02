@@ -1,38 +1,188 @@
-.App {
-  text-align: center;
+.main {
+	height: 100%;
+	display: table;
+	width: 100%;
+	font-family: Montserrat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+	display: table-cell;
+	height: 100%;
+	vertical-align: middle;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.intro {
+	width: 65%;
+	margin: auto;
+	padding: 40px 40px;
+	background-color: white;
+	float: center;
+	text-align: center;
+	border-radius: 12px;
+	min-height: 450px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.head {
+	font-weight: bold;
+	font-size: 30px;
+	color: #1C1D26;
+	display: inline;
+	letter-spacing: 2px;
+	user-select: none;
+	width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.headsmall {
+	font-size: 20px;
+	display: inline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.containerwrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.left {
+	width: 8%;
+	height: 342px;
+	border-right: 1px solid #1C1D26;
+	margin-top: 20px;
+	text-align: right;
+	padding-top: 8px;
+}
+
+.right {
+	width: 85%;
+	height: 350px;
+	border: 0px solid black;
+	margin-top: 20px;
+	text-align: left;
+}
+
+.zero {
+	width: 8%;
+	height: 40px;
+	border: 0px solid black;
+	text-align: left;
+}
+
+.bottom {
+	width: 85%;
+	height: 40px;
+	border-top: 1px solid #1C1D26;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.texthead {
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 10px;
+	color: #1C1D26;
+	user-select: none;
+	letter-spacing: 1px;
+	margin-top: 21.7px;
+	margin-right: 10px;
+}
+
+.textname {
+	display: inline;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 10px;
+	color: #1C1D26;
+	user-select: none;
+	letter-spacing: 1px;
+	width: 40px;
+	margin-left: 32px;
+	margin-top: 10px;
+}
+
+.line {
+	width: 100%;
+	height: 1px;
+	margin-bottom: 34px;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.graphcontent {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	width: 750px;
+	height: 350px;
+	position: absolute;
+	margin-top: -349px;
+}
+
+.bar {
+	text-align: center;
+	width: 40px;
+	background-image: linear-gradient(#383A4A, #1C1D26);
+	margin-left: 32px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 8px;
+	color: #FFFFFF;
+	user-select: none;
+	padding-top: 10px;
+}
+
+.scale-appear {
+	transform: scaleY(0);
+	transform-origin: bottom;
+}
+
+.scale-appear.scale-appear-active {
+	transform: scaleY(1);
+	transition: 1000ms ease-in-out;
+}
+
+.fade-appear {
+	opacity: 0;
+}
+
+.fade-appear.fade-appear-active {
+	opacity: 1;
+	transition: 500ms ease-in-out;
+}
+
+@media screen and (max-width: 1000px) {
+
+	.intro {
+		width: 340px;
+		padding: 10px;
+	}
+	
+	.left {
+		width: 50px;
+	}
+
+	.right {
+		width: 250px;
+	}
+
+	.zero {
+		width: 50px;
+	}
+
+	.bottom {
+		width: 250px;
+	}
+
+	.texthead {
+		font-size: 8px;
+		margin-top: 25px;
+	}
+
+	.bar {
+		font-size: 5px;
+		width: 20px;
+		margin-left: 5px;
+	}
+	
+	.textname {
+		font-size: 5px;
+		width: 20px;
+		margin-left: 5px;
+	}
 }
