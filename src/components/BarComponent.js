@@ -7,7 +7,9 @@ class Bar extends Component {
 
 		const bars = this.props.state.data.map((country, i) => (
 			<CSSTransition key = {i} in={true} classNames="scale" enter={false} exit={false} appear={true} timeout={1000}>
-				<section key={ country.name } className="bar" style={{ height: country.cases/this.props.state.total*350 - 10}}> {country.cases} </section>
+				<section key={ country.name } className="bar" style={{ height: country.cases/this.props.state.total*350 - 10}}>
+					<section className="numtext"> {country.cases} </section>
+				</section>
 			</CSSTransition>
 		));
 

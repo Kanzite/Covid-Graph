@@ -82,7 +82,7 @@
 	color: #1C1D26;
 	user-select: none;
 	letter-spacing: 1px;
-	margin-top: 21.7px;
+	margin-top: 22.5px;
 	margin-right: 10px;
 }
 
@@ -124,7 +124,17 @@
 	font-size: 8px;
 	color: #FFFFFF;
 	user-select: none;
+	cursor: pointer;
 	padding-top: 10px;
+}
+
+.numtext {
+	transition: 500ms;
+}
+
+.bar:hover .numtext {
+	transform: translateY(-30px) scale(2);
+	color: #1C1D26;
 }
 
 .scale-appear {
@@ -171,7 +181,7 @@
 
 	.texthead {
 		font-size: 8px;
-		margin-top: 25px;
+		margin-top: 25.5px;
 	}
 
 	.bar {
